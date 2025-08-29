@@ -1,6 +1,5 @@
 import {HTMLAttributes, ReactNode} from 'react';
 import {motion} from 'motion/react';
-import {useInView} from 'react-intersection-observer';
 
 export interface ParallaxProps {
   translate?: 'y' | 'x';
@@ -18,13 +17,12 @@ const ParallaxLayer = ({
   moveFrom = 'right-bottom',
   className,
 }: ParallaxLayerProps) => {
-  const {} = useInView();
   const translateKey = translate === 'y' ? 'translateY' : 'translateX';
   return (
     <motion.div
       initial={{
-        opacity: 0,
-        [translateKey]: moveFrom === 'left-top' ? '-100px' : '100px',
+        opacity: 0.2,
+        [translateKey]: moveFrom === 'left-top' ? '-50px' : '50px',
       }}
       // @ts-expect-error dynamic
       whileInView={{

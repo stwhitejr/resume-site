@@ -35,13 +35,14 @@ const PageSection = (props: PageSectionProps) => {
   }, [inView, props.id, setSelectedPage]);
 
   /**
+   * todo
    * ${props.topBuffer ? 'pt-[var(--headerBuffer--mobilePlus)] md:pt-[var(--headerBuffer--desktopPlus)]' : 'pt-[var(--headerBuffer--mobile)] md:pt-[var(--headerBuffer--desktop)]'}
    */
   return (
     <section
       ref={ref}
       id={props.id}
-      className={`relative w-full overflow-x-hidden snap-start ${props.topBuffer ? 'pt-10' : ''}  ${props.bottomBuffer ? 'pb-10 lg:pb-20' : ''} ${props.fullBleed ? '' : 'px-10 lg:px-20'} ${props.className}`}
+      className={`relative w-full overflow-x-hidden md:snap-start ${props.topBuffer ? 'pt-10' : ''}  ${props.bottomBuffer ? 'pb-10 lg:pb-20' : ''} ${props.fullBleed ? '' : 'px-10 lg:px-20'} ${props.className}`}
     >
       {props.children}
     </section>

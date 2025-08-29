@@ -28,7 +28,7 @@ const Pill = ({children}: {children: ReactNode}) => (
 );
 const Skills = () => {
   return (
-    <div className="flex gap-2 items-center justify-center md:justify-end  flex-wrap">
+    <div className="flex gap-2 items-center flex-wrap">
       {skills.map((skill) => (
         <Pill key={skill}>{skill}</Pill>
       ))}
