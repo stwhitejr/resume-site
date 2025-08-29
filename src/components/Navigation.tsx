@@ -25,17 +25,17 @@ const pages = [
 ];
 
 const Navigation = () => {
-  const {selectedPage, setSelectedPage} = useContext(RouterContext);
+  const {selectedPage} = useContext(RouterContext);
   return (
     <div className="flex gap-2">
       {pages.map((page) => (
-        <div
+        <a
+          href={`/#${page.id}`}
           key={page.id}
           className={`text-center ${selectedPage === page.id ? 'bg-primary text-white' : 'text-black hover:bg-primary hover:text-white cursor-pointer'} rounded-lg px-2 py-1`}
-          onClick={() => setSelectedPage(page.id)}
         >
           {page.title}
-        </div>
+        </a>
       ))}
     </div>
   );

@@ -1,4 +1,4 @@
-import {createContext, ReactNode, useEffect, useState} from 'react';
+import {createContext, ReactNode, useEffect, useRef, useState} from 'react';
 
 export const RouterContext = createContext<{
   selectedPage: string;
@@ -12,13 +12,27 @@ export interface RouterProps {
 const getLocationHash = () => window.location.hash.replace('#', '');
 
 const Router = (props: RouterProps) => {
+  const isFirstMount = useRef(false);
   const [selectedPage, setSelectedPage] = useState(getLocationHash());
 
   useEffect(() => {
-    const currentHash = getLocationHash();
+    if (!isFirstMount.current) {
+      isFirstMount.current = true;
+      const section = document.querySelector(`#${selectedPage}`);
+      if (section) {
+        section.scrollIntoView();
+      }
+    } else {
+      const timeout = setTimeout(() => {
+        const currentHash = getLocationHash();
 
-    if (currentHash !== selectedPage) {
-      window.history.pushState(null, '', `#${selectedPage}`);
+        if (currentHash !== selectedPage) {
+          window.history.pushState(null, '', `#${selectedPage}`);
+        }
+      }, 500);
+      return () => {
+        clearTimeout(timeout);
+      };
     }
   }, [selectedPage]);
   return (
