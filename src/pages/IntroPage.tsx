@@ -27,7 +27,7 @@ const IntroPage = () => {
 
       <ParallaxLayer
         translate="x"
-        className="flex-1 relative min-h-[300px] overflow-hidden"
+        className="flex-1 relative min-h-[200px] overflow-hidden"
       >
         <img
           src="/images/headshot.jpg"
