@@ -1,0 +1,33 @@
+@import 'tailwindcss';
+
+:root {
+  --headerBuffer--mobile: 115px;
+  --headerBuffer--mobilePlus: 135px;
+  --headerBuffer--desktop: 80px;
+  --headerBuffer--desktopPlus: 100px;
+}
+
+@theme {
+  --color-primary: #0c6164;
+  --color-primary--light: #91adae;
+  --color-secondary: #9d6812;
+  --color-secondary--light: #f3eee6;
+  --font-body: 'Montserrat', system-ui, sans-serif;
+  --font-head: 'Merriweather', system-ui, serif;
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: 300;
+}
+p {
+  font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-head);
+}

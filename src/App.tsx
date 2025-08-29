@@ -1,28 +1,26 @@
-import SnowboardsListPage from '@root/pages/SnowboardsListPage';
-import {store} from '@root/store';
-import {Provider} from 'react-redux';
-import {BrowserRouter, Route, Routes} from 'react-router-dom';
-import {snowboardPath, snowboardsPath} from './paths';
-import SnowboardUpdatePage from './pages/SnowboardUpdatePage';
-import Toast from '@root/features/toast/Toast';
+import ScrollContainer from './components/ScrollContainer';
+import Router from './components/Router';
+import IntroPage from './pages/IntroPage';
+import SalesPitchPage from './pages/SalesPitchPage';
+import ExperiencePage from './pages/ExperiencePage';
+import ContactPage from './pages/ContactPage';
+import Header from './components/Header';
+import ProjectsPage from './pages/ProjectsPage';
 
 const App = () => {
   return (
-    <Provider store={store}>
-      <BrowserRouter>
-        <Routes>
-          <Route
-            path={snowboardsPath.pattern}
-            element={<SnowboardsListPage />}
-          />
-          <Route
-            path={snowboardPath.pattern}
-            element={<SnowboardUpdatePage />}
-          />
-        </Routes>
-      </BrowserRouter>
-      <Toast />
-    </Provider>
+    <Router>
+      <div className="relative h-screen w-screen overflow-hidden flex flex-col ">
+        <Header />
+        <ScrollContainer>
+          <IntroPage />
+          <SalesPitchPage />
+          <ExperiencePage />
+          <ProjectsPage />
+          <ContactPage />
+        </ScrollContainer>
+      </div>
+    </Router>
   );
 };
 

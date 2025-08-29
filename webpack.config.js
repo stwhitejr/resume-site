@@ -1,11 +1,13 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: './src/index.tsx',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
+    publicPath: '/',
   },
   resolve: {
     alias: {
@@ -29,19 +31,19 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.css$/i,
-        use: [
-          {loader: 'style-loader', options: {injectType: 'styleTag'}},
-          {
-            loader: 'css-loader',
-          },
-        ],
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader', 'postcss-loader'],
       },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: './public/index.html',
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        {from: 'public', to: '.', globOptions: {ignore: ['**/index.html']}},
+      ],
     }),
   ],
   devServer: {
