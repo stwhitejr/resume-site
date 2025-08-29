@@ -9,7 +9,7 @@ const IntroPage = () => {
     <PageSection
       id={INTRO_PAGE_ID}
       fullBleed
-      className="flex flex-col-reverse md:flex-row mt-[-100px] md:mt-0 h-screen md:h-full"
+      className="flex flex-col-reverse md:flex-row mt-[-100px] md:mt-0 h-[100dvh] md:h-full"
     >
       <ParallaxLayer className="flex-1 p-10 md:p-20 flex items-center">
         <div>
@@ -28,7 +28,7 @@ const IntroPage = () => {
       <ParallaxLayer translate="x" className="flex-1 relative overflow-hidden">
         <img
           src="/images/headshot.jpg"
-          className="w-full h-full object-cover object-[0px_20px] md:object-top"
+          className="w-full h-full object-cover object-top"
         />
       </ParallaxLayer>
     </PageSection>

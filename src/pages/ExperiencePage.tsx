@@ -69,7 +69,7 @@ const ExperiencePage = () => {
 
           <div className="md:col-start-1 md:row-start-1 md:mt-auto pt-5 md:pt-20">
             <ExperienceHeader title="Wayfair">
-              Staff (L4) Frontend Engineer Boston, MA • 2014–2025
+              Staff (L4) Frontend Engineer Boston,&nbsp;MA&nbsp;•&nbsp;2014–2025
             </ExperienceHeader>
           </div>
 
@@ -156,7 +156,7 @@ const ExperiencePage = () => {
 
           <div className="md:col-span-2 pt-5">
             <ExperienceHeader title="ICON Advertising & Design">
-              Designer / Web Developer • Boston, MA • 2011–2014
+              Designer / Web Developer • Boston,&nbsp;MA&nbsp;•&nbsp;2011–2014
             </ExperienceHeader>
           </div>
 
