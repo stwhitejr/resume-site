@@ -145,9 +145,9 @@ const ExperiencePage = () => {
 
             <ExperienceCard title="Impact">
               <ExperienceList>
-                <li>email systems served 20M+ customers annually</li>
+                <li>email systems serve 1B+ monthly sends</li>
                 <li>
-                  flow builder supports 10+ orgs / 500+ flows in production
+                  internal tools supports 100+ orgs / 400+ flows in production
                 </li>
                 <li>internal apps supported 1,000+ employees</li>
               </ExperienceList>

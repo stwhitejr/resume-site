@@ -6,7 +6,7 @@ export interface ScrollContainerProps {
 
 const ScrollContainer = (props: ScrollContainerProps) => {
   return (
-    <div className="flex-2 overflow-y-scroll snap-y snap-mandatory scroll-smooth">
+    <div className="flex-2 overflow-y-scroll snap-y snap-proximity lg:snap-mandatory scroll-smooth">
       {props.children}
     </div>
   );
