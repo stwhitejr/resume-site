@@ -52,7 +52,9 @@ const SalesPitchPage = () => {
   return (
     <PageSection
       id={SALES_PITCH_PAGE_ID}
-      className="flex flex-col gap-15 pb-10 lg:pb-0 md:pt-10  md:gap-0 md:h-full"
+      topBuffer
+      bottomBuffer
+      className="flex flex-col gap-15 md:gap-0 md:h-full"
     >
       <div className="flex-1 flex flex-col md:flex-row gap-4">
         <Image position="left" fileName="bridge" isMobileOnly={false} />

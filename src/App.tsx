@@ -10,7 +10,7 @@ import ProjectsPage from './pages/ProjectsPage';
 const App = () => {
   return (
     <Router>
-      <div className="md:h-screen md:w-screen md:overflow-hidden md:flex md:flex-col">
+      <div className="h-screen w-screen overflow-hidden flex flex-col">
         <Header />
         <ScrollContainer>
           <IntroPage />

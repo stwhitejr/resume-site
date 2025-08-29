@@ -9,10 +9,10 @@ const IntroPage = () => {
     <PageSection
       id={INTRO_PAGE_ID}
       fullBleed
-      className="flex flex-col-reverse md:flex-row h-screen md:h-full"
+      className="flex flex-col-reverse md:flex-row mt-[-100px] md:mt-0 h-screen md:h-full"
     >
       <ParallaxLayer className="flex-1 p-10 md:p-20 flex items-center">
-        <div className="border-b-2 border-primary--light pb-5 md:pb-0 md:border-none">
+        <div>
           <Text variation="title" className="mb-4">
             Hi, I’m Steve
           </Text>
@@ -21,13 +21,14 @@ const IntroPage = () => {
             Frontend focused engineer using primarily <i>React + Typescript</i>{' '}
             who loves solving both technical and human&nbsp;problems.
           </Text>
+          <div className="border-b-2 pt-5 md:pt-0 border-primary--light md:border-none w-[50%]"></div>
         </div>
       </ParallaxLayer>
 
       <ParallaxLayer translate="x" className="flex-1 relative overflow-hidden">
         <img
           src="/images/headshot.jpg"
-          className="w-full h-full object-cover object-[0px_30px] md:object-top"
+          className="w-full h-full object-cover object-[0px_40px] md:object-top"
         />
       </ParallaxLayer>
     </PageSection>
