@@ -18,7 +18,8 @@ const Router = (props: RouterProps) => {
   useEffect(() => {
     if (!isFirstMount.current) {
       isFirstMount.current = true;
-      const section = document.querySelector(`#${selectedPage}`);
+      const section =
+        selectedPage && document.querySelector(`#${selectedPage}`);
       if (section) {
         section.scrollIntoView();
       }
