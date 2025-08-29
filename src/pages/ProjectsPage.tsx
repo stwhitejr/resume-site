@@ -55,7 +55,7 @@ const ProjectsPage = () => {
     <PageSection
       id={PROJECTS_PAGE_ID}
       topBuffer
-      className="bg-primary flex md:full"
+      className="bg-primary flex md:h-full"
     >
       <ParallaxLayer>
         <Text variation="title" className="text-white pt-2">

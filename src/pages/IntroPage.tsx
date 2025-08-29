@@ -28,7 +28,7 @@ const IntroPage = () => {
       <ParallaxLayer translate="x" className="flex-1 relative overflow-hidden">
         <img
           src="/images/headshot.jpg"
-          className="w-full h-full object-cover object-[0px_40px] md:object-top"
+          className="w-full h-full object-cover object-[0px_20px] md:object-top"
         />
       </ParallaxLayer>
     </PageSection>
