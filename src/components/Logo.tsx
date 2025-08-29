@@ -4,7 +4,7 @@ const Logo = () => {
   return (
     <a
       href={`/#${INTRO_PAGE_ID}`}
-      className="tracking-widest text-primary uppercase text-2xl cursor-pointer mb-2 md:mb-0"
+      className="tracking-widest text-primary uppercase text-sm cursor-pointer mb-2 md:mb-0 "
     >
       Steve White
     </a>

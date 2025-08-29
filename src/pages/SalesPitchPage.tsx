@@ -15,7 +15,7 @@ const Image = ({
     <ParallaxLayer
       moveFrom={position === 'left' ? 'left-top' : 'right-bottom'}
       translate="x"
-      className="flex-1 md:py-10 flex relative"
+      className="flex-1 md:py-10 flex relative h-full"
     >
       <div
         className="w-full h-[100px] bg-center bg-cover bg-no-repeat m-auto md:m-0 md:h-full rounded-xl "
@@ -30,7 +30,7 @@ const Image = ({
 const Content = ({title, children}) => {
   return (
     <ParallaxLayer className="flex-1 pointer-events-none self-center">
-      <div className="p-5 lg:px-20">
+      <div className="p-0 pb-7 lg:px-20">
         <Text variation="subtitle" className="mb-2 text-primary">
           {title}
         </Text>
@@ -46,7 +46,7 @@ const SalesPitchPage = () => {
   return (
     <PageSection
       id={SALES_PITCH_PAGE_ID}
-      className="flex flex-col gap-5 md:gap-0"
+      className="flex flex-col gap-5 md:gap-0 md:h-full"
     >
       <div className="flex-1 flex flex-col md:flex-row gap-4">
         <Image position="left" fileName="bridge" />

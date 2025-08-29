@@ -16,7 +16,7 @@ const ExperienceCard = ({
   className?: HTMLAttributes<HTMLDivElement>['className'];
 }) => {
   return (
-    <div className={`bg-white p-10 self-start ${className} shadow-md`}>
+    <div className={`bg-white w-full p-10 self-start ${className} shadow-md`}>
       <Text variation="body" className="text-secondary mb-5">
         {title}
       </Text>

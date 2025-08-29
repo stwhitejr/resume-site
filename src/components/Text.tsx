@@ -3,7 +3,7 @@ import {HTMLAttributes, ReactNode} from 'react';
 const VARIATION_MAP = {
   title: {
     as: 'h1',
-    className: 'text-5xl drop-shadow-2xl leading-15 text-bg',
+    className: 'text-5xl leading-15 text-bg',
   },
   subtitle: {as: 'h2', className: 'text-3xl text-black'},
   sectiontitle: {as: 'h3', className: 'text-2xl font-semibold text-gray-800'},

@@ -52,7 +52,11 @@ const Project = ({
 
 const ProjectsPage = () => {
   return (
-    <PageSection id={PROJECTS_PAGE_ID} topBuffer className="bg-primary flex">
+    <PageSection
+      id={PROJECTS_PAGE_ID}
+      topBuffer
+      className="bg-primary flex md:full"
+    >
       <ParallaxLayer>
         <Text variation="title" className="text-white pt-2">
           Projects

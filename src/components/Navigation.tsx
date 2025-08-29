@@ -32,7 +32,7 @@ const Navigation = () => {
         <a
           href={`/#${page.id}`}
           key={page.id}
-          className={`text-center ${selectedPage === page.id ? 'bg-primary text-white' : 'text-black hover:bg-primary hover:text-white cursor-pointer'} rounded-lg px-2 py-1`}
+          className={`text-center text-xs ${selectedPage === page.id ? 'bg-primary text-white' : 'text-black hover:bg-primary hover:text-white cursor-pointer'} rounded-lg px-2 py-1`}
         >
           {page.title}
         </a>

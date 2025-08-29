@@ -26,7 +26,7 @@ const ParallaxLayer = ({
         opacity: 0,
         [translateKey]: moveFrom === 'left-top' ? '-100px' : '100px',
       }}
-      // @ts-expect-error dynamic key
+      // @ts-expect-error dynamic
       whileInView={{
         opacity: 1,
         [translateKey]: '0px',

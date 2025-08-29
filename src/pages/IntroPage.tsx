@@ -9,18 +9,17 @@ const IntroPage = () => {
     <PageSection
       id={INTRO_PAGE_ID}
       fullBleed
-      // Adding h-full will enforce the overflow hidden and cut off any excess
       className="flex flex-col-reverse md:flex-row h-full"
     >
-      <ParallaxLayer className="flex-1 self-center">
-        <div className="p-20">
+      <ParallaxLayer className="flex-1 self-center p-10 md:p-20 flex items-center">
+        <div>
           <Text variation="title" className="mb-4">
             Hi, I’m Steve
           </Text>
-          <Text variation="large" className="leading-8">
+          <Text variation="large" className="max-w-[500px] leading-8">
             I have <i>15+ years</i> designing and building for the web. I’m a
             Frontend focused engineer using primarily <i>React + Typescript</i>{' '}
-            who loves solving both technical and human problems.
+            who loves solving both technical and human&nbsp;problems.
           </Text>
         </div>
       </ParallaxLayer>
