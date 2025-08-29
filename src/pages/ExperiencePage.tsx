@@ -104,8 +104,7 @@ const ExperiencePage = () => {
                 </li>
                 <li>
                   Co-created a new email template CMS, enabling non-engineers to
-                  build batch + triggered emails without dev support. (Still in
-                  use in 2025.)
+                  build batch + triggered emails without dev support.
                 </li>
                 <li>
                   Delivered multiple redesigns while maintaining parallel system
@@ -146,12 +145,11 @@ const ExperiencePage = () => {
 
             <ExperienceCard title="Impact">
               <ExperienceList>
-                <li>email systems served X M+ customers annually</li>
+                <li>email systems served 20M+ customers annually</li>
                 <li>
-                  campaign/flow builder now supports X orgs / Y,000+ flows in
-                  production
+                  flow builder supports 10+ orgs / 500+ flows in production
                 </li>
-                <li>internal apps supported X,000 employees</li>
+                <li>internal apps supported 1,000+ employees</li>
               </ExperienceList>
             </ExperienceCard>
           </ParallaxLayer>
