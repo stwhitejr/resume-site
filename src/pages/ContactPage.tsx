@@ -8,7 +8,7 @@ const ContactPage = () => {
   return (
     <PageSection
       id={CONTACT_PAGE_ID}
-      className="bg-white flex items-center h-full"
+      className="bg-white flex items-center h-full md:h-screen"
     >
       <ParallaxLayer className="w-full">
         <div className="mx-auto max-w-3xl px-6 flex flex-col gap-8 text-center">

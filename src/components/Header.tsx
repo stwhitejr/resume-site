@@ -3,7 +3,7 @@ import Navigation from './Navigation';
 
 const Header = () => {
   return (
-    <div className="w-full flex flex-col md:flex-row justify-between p-4 items-center bg-white md:px-20">
+    <div className="w-full sticky top-0 flex flex-col md:flex-row justify-between p-4 items-center bg-white md:px-20">
       <Logo />
       <Navigation />
     </div>

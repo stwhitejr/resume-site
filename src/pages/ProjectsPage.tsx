@@ -68,7 +68,7 @@ const ProjectsPage = () => {
             description="A travel/photo gallery site built off my iPhone's metadata. Next.js + Supabase photo gallery with Mapbox integration."
             cta="View Site"
             href="https://www.freewheeling.dev/"
-            imageUrl="https://private-user-images.githubusercontent.com/19558731/468220883-5005f994-92e5-4669-a5c9-5c01e102fcc4.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTY0MTk0NTYsIm5iZiI6MTc1NjQxOTE1NiwicGF0aCI6Ii8xOTU1ODczMS80NjgyMjA4ODMtNTAwNWY5OTQtOTJlNS00NjY5LWE1YzktNWMwMWUxMDJmY2M0LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MjglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODI4VDIyMTIzNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWQ1ZTg2ZWMyMGE3Yzg2MTIzYTgzM2M4MGM2NzRhODAyMTY4MTNlNWMwYWEzN2Y5ZDI3YzliYjE1YTAzYThhNzUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.IxPEeKxo1-oT8rZsmpkA27GqP2WfOe72-NmYcbDOzIk"
+            imageUrl="/images/travel_site.png"
           />
           <Project
             title="Van Dashboard"
@@ -76,7 +76,7 @@ const ProjectsPage = () => {
 and battery monitoring."
             cta="Github"
             href="https://github.com/stwhitejr/van-ui"
-            imageUrl="https://private-user-images.githubusercontent.com/19558731/473490692-37672f85-7051-4777-aa6b-e53a8268ccfe.jpg?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTY0MjA1NDcsIm5iZiI6MTc1NjQyMDI0NywicGF0aCI6Ii8xOTU1ODczMS80NzM0OTA2OTItMzc2NzJmODUtNzA1MS00Nzc3LWFhNmItZTUzYTgyNjhjY2ZlLmpwZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MjglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODI4VDIyMzA0N1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWM0NDdiZDIwZDljMWFjN2NiYjg3ZjIzMjc5Mjc5MmEzNTliMzU1NzM3NjgzYmU4ZGNkYzM2NjQ3ODU3NGQ4YmMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.uGVcjrKTu3K9yi-AAEYIr0uLzGioV96IWpOwDz3xnH8"
+            imageUrl="/images/van_dashboard.jpg"
           />
           <Project
             parallaxProps={{moveFrom: 'right-bottom', translate: 'x'}}
@@ -84,7 +84,7 @@ and battery monitoring."
             description="NPM package to generate UIs from JSON schemas."
             cta="Github"
             href="https://github.com/stwhitejr/json-schema-to-ui"
-            imageUrl="https://private-user-images.githubusercontent.com/19558731/423242928-5e5532c6-09fe-4662-aee2-d50d41aa5396.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTY0MjA2NDEsIm5iZiI6MTc1NjQyMDM0MSwicGF0aCI6Ii8xOTU1ODczMS80MjMyNDI5MjgtNWU1NTMyYzYtMDlmZS00NjYyLWFlZTItZDUwZDQxYWE1Mzk2LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MjglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODI4VDIyMzIyMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWYwYjQ5NTg4ODhiNTc2MDZhZWRlM2JkOWJhYTZjNGRmY2M1MGM3ZDAxNDkzZTZhZjlkMTA0ZDIxNWJlODVjYjkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.r4WAhCEOOdGdlglbzrDsKgogmUrwpDsC57ZAjHmG-pg"
+            imageUrl="/images/json_schema.png"
           />
         </div>
       </ParallaxLayer>
