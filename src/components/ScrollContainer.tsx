@@ -1,6 +1,8 @@
 import {ScrollContext} from '@root/context/ScrollContext';
 import {ReactNode, useContext, useEffect, useRef} from 'react';
 
+const TOP_PAGE_BUFFER = 50;
+
 export interface ScrollContainerProps {
   children: ReactNode;
 }
@@ -27,7 +29,10 @@ const ScrollContainer = (props: ScrollContainerProps) => {
   useEffect(() => {
     const scrollEvent = (e) => {
       if (updateWindowIsOpen.current) {
-        if (e.srcElement.scrollTop > scrollTop.current) {
+        if (
+          e.srcElement.scrollTop > scrollTop.current &&
+          e.srcElement.scrollTop > TOP_PAGE_BUFFER
+        ) {
           setScrollDirection('down');
         } else if (e.srcElement.scrollTop < scrollTop.current) {
           setScrollDirection('up');
