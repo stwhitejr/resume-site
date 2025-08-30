@@ -31,7 +31,7 @@ const Image = ({
 
 const Content = ({title, children, quote, image}) => {
   return (
-    <ParallaxLayer className="flex-1 self-center">
+    <ParallaxLayer translate="x" className="flex-1 self-center">
       <div className="p-0 md:p-5 lg:px-15">
         <Text variation="subtitle" className="mb-4 md:mb-2 text-primary">
           {title}

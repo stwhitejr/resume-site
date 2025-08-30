@@ -48,7 +48,7 @@ const ScrollContainer = (props: ScrollContainerProps) => {
   return (
     <div
       ref={ref}
-      className={`flex-2 overflow-y-scroll md:snap-y md:snap-mandatory scroll-smooth`}
+      className={`flex-2 overflow-y-scroll h-full md:snap-y md:snap-mandatory scroll-smooth`}
     >
       {props.children}
     </div>

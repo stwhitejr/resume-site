@@ -12,7 +12,7 @@ const App = () => {
   return (
     <Router>
       <ScrollContextProvider>
-        <div className="h-screen w-screen overflow-hidden flex flex-col">
+        <div className="relative h-screen w-screen overflow-hidden">
           <Header />
           <ScrollContainer>
             <IntroPage />

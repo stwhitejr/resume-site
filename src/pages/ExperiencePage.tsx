@@ -69,7 +69,8 @@ const ExperiencePage = () => {
 
           <div className="md:col-start-1 md:row-start-1 md:mt-auto pt-5 md:pt-20">
             <ExperienceHeader title="Wayfair">
-              Staff (L4) Frontend Engineer Boston,&nbsp;MA&nbsp;•&nbsp;2014–2025
+              Staff (L4) Frontend Engineer
+              Boston,&nbsp;MA&nbsp;•&nbsp;2014&#8209;2025
             </ExperienceHeader>
           </div>
 
@@ -81,8 +82,8 @@ const ExperiencePage = () => {
             <ExperienceCard title="Customer-Facing Work">
               <ExperienceList>
                 <li>
-                  Contributed to Wayfair.com storefront during pre-IPO growth,
-                  improving customer shopping experiences.
+                  Contributed to Wayfair.com storefront before and after IPO
+                  growth, improving customer shopping experiences.
                 </li>
                 <li>
                   Owned development of marketing and transactional emails across
@@ -103,7 +104,7 @@ const ExperiencePage = () => {
                   Wayfair’s communication platform suite.
                 </li>
                 <li>
-                  Co-created a new email template CMS, enabling non-engineers to
+                  Developed a new email template CMS, enabling non-engineers to
                   build batch + triggered emails without dev support.
                 </li>
                 <li>
@@ -156,7 +157,8 @@ const ExperiencePage = () => {
 
           <div className="md:col-span-2 pt-5">
             <ExperienceHeader title="ICON Advertising & Design">
-              Designer / Web Developer • Boston,&nbsp;MA&nbsp;•&nbsp;2011–2014
+              Designer / Web Developer •
+              Boston,&nbsp;MA&nbsp;•&nbsp;2011&#8209;2014
             </ExperienceHeader>
           </div>
 
