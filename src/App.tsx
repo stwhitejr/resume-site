@@ -6,20 +6,23 @@ import ExperiencePage from './pages/ExperiencePage';
 import ContactPage from './pages/ContactPage';
 import Header from './components/Header';
 import ProjectsPage from './pages/ProjectsPage';
+import {ScrollContextProvider} from './context/ScrollContext';
 
 const App = () => {
   return (
     <Router>
-      <div className="h-screen w-screen overflow-hidden flex flex-col">
-        <Header />
-        <ScrollContainer>
-          <IntroPage />
-          <SalesPitchPage />
-          <ExperiencePage />
-          <ProjectsPage />
-          <ContactPage />
-        </ScrollContainer>
-      </div>
+      <ScrollContextProvider>
+        <div className="h-screen w-screen overflow-hidden flex flex-col">
+          <Header />
+          <ScrollContainer>
+            <IntroPage />
+            <SalesPitchPage />
+            <ExperiencePage />
+            <ProjectsPage />
+            <ContactPage />
+          </ScrollContainer>
+        </div>
+      </ScrollContextProvider>
     </Router>
   );
 };
