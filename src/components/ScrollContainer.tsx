@@ -10,7 +10,7 @@ export interface ScrollContainerProps {
 const ScrollContainer = (props: ScrollContainerProps) => {
   const scrollTop = useRef(0);
   const updateWindowIsOpen = useRef(false);
-  const {scrollDirection, setScrollDirection} = useContext(ScrollContext);
+  const {shouldHideHeader, setShouldHideHeader} = useContext(ScrollContext);
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -24,20 +24,26 @@ const ScrollContainer = (props: ScrollContainerProps) => {
         clearTimeout(timeout);
       };
     }
-  }, [scrollDirection]);
+  }, [shouldHideHeader]);
 
   useEffect(() => {
     const scrollEvent = (e) => {
-      if (updateWindowIsOpen.current) {
-        if (
-          e.srcElement.scrollTop > scrollTop.current &&
-          e.srcElement.scrollTop > TOP_PAGE_BUFFER
-        ) {
-          setScrollDirection('down');
-        } else if (e.srcElement.scrollTop < scrollTop.current) {
-          setScrollDirection('up');
-        } else {
-          setScrollDirection(null);
+      // Always show at top
+      if (e.srcElement.scrollTop <= TOP_PAGE_BUFFER && shouldHideHeader) {
+        setShouldHideHeader(false);
+      } else {
+        if (updateWindowIsOpen.current) {
+          // Going down
+          if (
+            e.srcElement.scrollTop > scrollTop.current &&
+            e.srcElement.scrollTop > TOP_PAGE_BUFFER
+          ) {
+            setShouldHideHeader(true);
+          } else if (e.srcElement.scrollTop < scrollTop.current) {
+            setShouldHideHeader(false);
+          } else {
+            setShouldHideHeader(false);
+          }
         }
       }
       scrollTop.current = e.srcElement.scrollTop;
@@ -48,7 +54,7 @@ const ScrollContainer = (props: ScrollContainerProps) => {
     return () => {
       element.removeEventListener('scroll', scrollEvent);
     };
-  }, []);
+  }, [shouldHideHeader]);
 
   return (
     <div

@@ -9,11 +9,11 @@ const IntroPage = () => {
     <PageSection
       id={INTRO_PAGE_ID}
       fullBleed
-      className="flex flex-col-reverse md:flex-row h-full"
+      className="flex flex-col-reverse md:flex-row h-full pt-10 md:pt-0"
     >
       <ParallaxLayer className="flex-1 p-10 md:p-20 md:items-center flex">
         <div>
-          <Text variation="title" className="mb-4">
+          <Text variation="title" className="mb-1 md:mb-4">
             Hi, I’m Steve
           </Text>
           <Text variation="large" className="md:max-w-[500px] leading-8">

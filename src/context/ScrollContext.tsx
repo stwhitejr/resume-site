@@ -3,17 +3,17 @@ import {createContext, ReactNode, useState} from 'react';
 export type ScrollDirection = null | 'up' | 'down';
 
 export const ScrollContext = createContext<{
-  scrollDirection: ScrollDirection;
-  setScrollDirection?: (arg: ScrollDirection) => void;
+  shouldHideHeader: boolean;
+  setShouldHideHeader?: (arg: boolean) => void;
 }>({
-  scrollDirection: null,
+  shouldHideHeader: false,
 });
 
 export const ScrollContextProvider = ({children}: {children: ReactNode}) => {
-  const [scrollDirection, setScrollDirection] = useState<ScrollDirection>(null);
+  const [shouldHideHeader, setShouldHideHeader] = useState(false);
 
   return (
-    <ScrollContext.Provider value={{scrollDirection, setScrollDirection}}>
+    <ScrollContext.Provider value={{shouldHideHeader, setShouldHideHeader}}>
       {children}
     </ScrollContext.Provider>
   );
