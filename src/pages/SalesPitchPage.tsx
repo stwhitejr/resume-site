@@ -33,7 +33,7 @@ const Content = ({title, children, quote, image}) => {
   return (
     <ParallaxLayer translate="x" className="flex-1 self-center">
       <div className="p-0 md:p-5 lg:px-15">
-        <Text variation="subtitle" className="mb-4 md:mb-2 text-primary">
+        <Text variation="subtitle" className="mb-5 md:mb-2 text-primary">
           {title}
         </Text>
         {image}
@@ -52,9 +52,8 @@ const SalesPitchPage = () => {
   return (
     <PageSection
       id={SALES_PITCH_PAGE_ID}
-      topBuffer
       bottomBuffer
-      className="flex flex-col gap-15 md:gap-0 md:h-full"
+      className="flex flex-col gap-15 md:gap-0 md:h-full pt-0 md:pt-10"
     >
       <div className="flex-1 flex flex-col md:flex-row gap-4">
         <Image position="left" fileName="bridge" isMobileOnly={false} />

@@ -11,7 +11,7 @@ const IntroPage = () => {
       fullBleed
       className="flex flex-col-reverse md:flex-row h-full pt-10 md:pt-0"
     >
-      <ParallaxLayer className="flex-1 p-10 md:p-20 md:items-center flex">
+      <ParallaxLayer className="flex-1 p-10 md:p-20 items-center flex">
         <div>
           <Text variation="title" className="mb-1 md:mb-4">
             Hi, I’m Steve
