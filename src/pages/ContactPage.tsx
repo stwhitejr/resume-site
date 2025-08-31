@@ -29,7 +29,7 @@ const ContactPage = () => {
             </a>
             •{' '}
             <a href="/Resume.pdf" target="_blank">
-              Download Resume
+              Resume
             </a>
           </Text>
         </div>
