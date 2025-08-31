@@ -1,6 +1,6 @@
 import {useContext} from 'react';
 import {RouterContext} from './Router';
-import {SALES_PITCH_PAGE_ID} from '@root/pages/SalesPitchPage';
+import {ABOUT_PAGE_ID} from '@root/pages/AboutPage';
 import {EXPERIENCE_PAGE_ID} from '@root/pages/ExperiencePage';
 import {PROJECTS_PAGE_ID} from '@root/pages/ProjectsPage';
 import {CONTACT_PAGE_ID} from '@root/pages/ContactPage';
@@ -8,7 +8,7 @@ import {CONTACT_PAGE_ID} from '@root/pages/ContactPage';
 const pages = [
   {
     title: 'About Me',
-    id: SALES_PITCH_PAGE_ID,
+    id: ABOUT_PAGE_ID,
   },
   {
     title: 'Experience & Skills',

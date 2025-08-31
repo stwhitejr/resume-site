@@ -2,7 +2,7 @@ import PageSection from '../components/PageSection';
 import ParallaxLayer from '../components/ParallaxLayer';
 import Text from '../components/Text';
 
-export const SALES_PITCH_PAGE_ID = 'sales_pitch';
+export const ABOUT_PAGE_ID = 'about_me';
 
 const Image = ({
   fileName,
@@ -48,10 +48,10 @@ const Content = ({title, children, quote, image}) => {
   );
 };
 
-const SalesPitchPage = () => {
+const AboutPage = () => {
   return (
     <PageSection
-      id={SALES_PITCH_PAGE_ID}
+      id={ABOUT_PAGE_ID}
       bottomBuffer
       className="flex flex-col gap-15 md:gap-0 md:h-full pt-0 md:pt-10"
     >
@@ -88,4 +88,4 @@ const SalesPitchPage = () => {
   );
 };
 
-export default SalesPitchPage;
+export default AboutPage;

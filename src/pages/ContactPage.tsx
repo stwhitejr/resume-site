@@ -27,6 +27,10 @@ const ContactPage = () => {
             <a href="https://www.github.com/stwhitejr" target="_blank">
               Github
             </a>
+            •{' '}
+            <a href="/Resume.pdf" target="_blank">
+              Download Resume
+            </a>
           </Text>
         </div>
       </ParallaxLayer>

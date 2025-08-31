@@ -146,11 +146,11 @@ const ExperiencePage = () => {
 
             <ExperienceCard title="Impact">
               <ExperienceList>
-                <li>email systems serve 1B+ monthly sends</li>
+                <li>Email systems serve 1B+ monthly sends</li>
                 <li>
-                  internal tools supports 100+ orgs / 400+ flows in production
+                  Internal tools supports 100+ orgs / 400+ flows in production
                 </li>
-                <li>internal apps supported 1,000+ employees</li>
+                <li>Internal apps supported 1,000+ employees</li>
               </ExperienceList>
             </ExperienceCard>
           </ParallaxLayer>
