@@ -30,7 +30,7 @@ const ParallaxLayer = ({
         [translateKey]: '0px',
         transition: {type: 'spring', stiffness: 50},
       }}
-      viewport={{once: true, amount: 0.01}}
+      viewport={{once: true}}
       className={className}
     >
       {children}

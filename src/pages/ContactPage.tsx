@@ -26,7 +26,7 @@ const ContactPage = () => {
             •{' '}
             <a href="https://www.github.com/stwhitejr" target="_blank">
               Github
-            </a>
+            </a>{' '}
             •{' '}
             <a href="/Resume.pdf" target="_blank">
               Resume
