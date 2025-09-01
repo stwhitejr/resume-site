@@ -37,7 +37,7 @@ const Content = ({title, children, quote, image}) => {
           {title}
         </Text>
         {image}
-        <Text variation="body" className="pt-10 md:py-0 md:leading-7">
+        <Text variation="body" className="pt-6 md:py-0 md:leading-7">
           {children}
         </Text>
         <div className="border-primary--light border-l-2 mt-5 p-2 px-4 italic text-gray-600">
