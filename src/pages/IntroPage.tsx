@@ -30,7 +30,7 @@ const IntroPage = () => {
 
       <ParallaxLayer
         translate="x"
-        className="max-h-[400px] sm:max-h-[400px] md:max-h-none flex-1 md:flex-1 relative min-h-[200px] overflow-hidden"
+        className="max-h-[300px] sm:max-h-[400px] md:max-h-none flex-1 md:flex-1 relative min-h-[200px] overflow-hidden"
       >
         <img
           src="/images/headshot.jpg"
