@@ -20,7 +20,7 @@ const Image = ({
       className={`flex-1  relative  ${isMobileOnly ? 'h-full flex md:h-0 md:none' : 'hidden py-0 md:flex md:py-10'}`}
     >
       <div
-        className="w-full h-[100px] bg-center bg-cover bg-no-repeat m-auto md:m-0 md:h-full rounded-xl "
+        className="w-full h-[200px] bg-center bg-cover bg-no-repeat m-auto md:m-0 md:h-full rounded-xl "
         style={{
           backgroundImage: `url(/images/${fileName}.jpg)`,
         }}
