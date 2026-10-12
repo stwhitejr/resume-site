@@ -4,21 +4,18 @@ import Text from './Text';
 const skills = [
   'Typescript',
   'React',
+  'Node.js',
   'Redux',
   'RTK Query',
+  'Apollo',
+  'GraphQL',
   'SASS',
   'Tailwind',
-  'Jest',
-  'Cypress',
-  'Playwright',
   'REST',
-  'GraphQL',
+  'PHP',
   'Git',
-  'Docker',
   'Webpack',
-  'Storybook',
   'Adobe',
-  'Figma',
 ];
 
 const Pill = ({children}: {children: ReactNode}) => (

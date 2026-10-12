@@ -69,8 +69,10 @@ const ExperiencePage = () => {
 
           <div className="md:col-start-1 md:row-start-1 md:mt-auto pt-5 md:pt-20">
             <ExperienceHeader title="Wayfair">
-              Staff (L4) Frontend Engineer
-              Boston,&nbsp;MA&nbsp;•&nbsp;2014&#8209;2025
+              Senior Frontend Engineer
+              Boston,&nbsp;MA&nbsp;•&nbsp;2014&#8209;Present
+              <br />
+              Storefront&nbsp;•&nbsp;Communications&nbsp;Platform&nbsp;•&nbsp;Marketing&nbsp;Engineering
             </ExperienceHeader>
           </div>
 
@@ -79,37 +81,52 @@ const ExperiencePage = () => {
             moveFrom="left-top"
             className="gap-5 md:gap-10 flex flex-col"
           >
-            <ExperienceCard title="Customer-Facing Work">
+            <ExperienceCard title="Storefront & Ecommerce Experiences">
               <ExperienceList>
                 <li>
-                  Contributed to Wayfair.com storefront before and after IPO
-                  growth, improving customer shopping experiences.
+                  Built upper and middle-funnel shopping pages, including the
+                  Wayfair.com homepage and product details page.
                 </li>
                 <li>
-                  Owned development of marketing and transactional emails across
-                  all Wayfair brands, reaching millions of customers weekly.
+                  Built CMS-driven pages on Next.js and federated GraphQL,
+                  designing schemas for CMS blocks that map directly to frontend
+                  components.
                 </li>
                 <li>
-                  Built reusable, modular email template systems (PHP/XSLT →
-                  Handlebars/Node) that reduced build time and improved brand
-                  consistency.
+                  Tech lead for the favorites and influencers experiences.
+                </li>
+                <li>
+                  Shipped customer-facing features for Wayfair and its sister
+                  brands from before the IPO through its growth years.
                 </li>
               </ExperienceList>
             </ExperienceCard>
 
-            <ExperienceCard title="Internal Tooling & Platforms">
+            <ExperienceCard title="Cross-Platform Architecture">
               <ExperienceList>
                 <li>
-                  Architected and maintained 7+ frontend applications powering
-                  Wayfair’s communication platform suite.
+                  Led a ground-up rebuild of Favorites, redesigning the
+                  backend-for-frontend layer and the web, Android, and iOS
+                  clients. New feature work went from months to about a week.
                 </li>
                 <li>
-                  Developed a new email template CMS, enabling non-engineers to
-                  build batch + triggered emails without dev support.
+                  Was a key contributor to a site-wide re-architecture of
+                  tracking events, uncovering hidden business logic and working
+                  with data scientists and engineers across time zones.
+                </li>
+              </ExperienceList>
+            </ExperienceCard>
+
+            <ExperienceCard title="Email at Scale">
+              <ExperienceList>
+                <li>
+                  Owned marketing and transactional emails across all Wayfair
+                  brands, reaching millions of customers weekly.
                 </li>
                 <li>
-                  Delivered multiple redesigns while maintaining parallel system
-                  versions for operational continuity.
+                  Rebuilt the email templating system (PHP/XSLT → modular
+                  Handlebars/Node), speeding up builds and improving brand
+                  consistency.
                 </li>
               </ExperienceList>
             </ExperienceCard>
@@ -120,37 +137,55 @@ const ExperiencePage = () => {
             moveFrom="right-bottom"
             className="gap-5 md:gap-10 flex flex-col"
           >
-            <ExperienceCard title="Campaign & Flow Management System">
+            <ExperienceCard title="Communications Platform (Internal SaaS)">
               <ExperienceList>
                 <li>
-                  Co-architected and owned Wayfair’s visual campaign and flow
-                  builder, a no-code, schema-driven application enabling both
-                  engineers and non-technical users to design and automate
-                  flows.
+                  Helped build and lead a 7-person frontend team for Wayfair’s
+                  in-house communications platform, used by marketing, adtech,
+                  recommendations, and order teams.
                 </li>
                 <li>
-                  Supported use cases from marketing campaigns to post-order
-                  engineering workflows, managing triggers, conditional API
-                  calls, and node-based orchestration.
-                </li>
-                <li>
-                  Delivered a highly visual, extensible platform that allowed
-                  users to build and manage flows without developer involvement.
-                </li>
-                <li>
-                  Became a core platform used across multiple orgs — marketing,
-                  logistics, operations, and engineering.
+                  Architected 7+ React/TypeScript/Redux SPAs with complex
+                  client-side state, delivering several redesigns while keeping
+                  previous versions running in parallel.
                 </li>
               </ExperienceList>
             </ExperienceCard>
 
-            <ExperienceCard title="Impact">
+            <ExperienceCard title="No-Code Workflow & Content Tools">
               <ExperienceList>
-                <li>Email systems serve 1B+ monthly sends</li>
                 <li>
-                  Internal tools supports 100+ orgs / 400+ flows in production
+                  Co-architected a visual, schema-driven flow builder (similar
+                  to n8n) covering triggers, conditional API calls, and
+                  node-based orchestration.
                 </li>
-                <li>Internal apps supported 1,000+ employees</li>
+                <li>
+                  Grew it to hundreds of users, from marketing analysts to
+                  logistics and operations engineers, running campaigns and
+                  post-order workflows without a developer.
+                </li>
+                <li>
+                  Co-created an email template CMS that lets non-engineers build
+                  batch and triggered emails; still in production.
+                </li>
+              </ExperienceList>
+            </ExperienceCard>
+
+            <ExperienceCard title="Leadership & Ways of Working">
+              <ExperienceList>
+                <li>
+                  Managed frontend engineers while staying hands-on in the code,
+                  then moved to the IC tech-lead track.
+                </li>
+                <li>
+                  Size work in 6-month planning cycles, flag risks and
+                  cross-team dependencies early, and partner with Product on
+                  technical and customer edge cases.
+                </li>
+                <li>
+                  Use AI coding agents daily (Cursor, Devin) and author custom
+                  agent skills, while keeping code review rigorous.
+                </li>
               </ExperienceList>
             </ExperienceCard>
           </ParallaxLayer>
